@@ -45,15 +45,12 @@
         function getNumsDivision(num1,num2){
             if (num1 < num2){
                 return num2 / num1;
-            } else {
-                return num1 / num2;
             }
+                return num1 / num2;
         }
         //Task 10
-        function getNumsFromUser{
-            var num1 = +prompt("Enter first number: ");
-            var num2 = +prompt("Enter second number: ");
-            return num1 + num2;
+        function getNumsFromUser(){
+            return getNumsSum(+prompt("Enter first number: "),+prompt("Enter second number: "));
         }
 
         
