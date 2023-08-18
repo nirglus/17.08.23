@@ -130,7 +130,15 @@
         function power(base,exponent){
             return Math.pow(base,exponent);
         }
-        
+        //Task 23
+        function sumOfDigs(num){
+            var sum = 0;
+            while (num){
+                sum = sum + (num % 10);
+                num = Math.floor(num / 10);
+            }
+            return sum;
+        }
     </script>
 </body>
 </html>
