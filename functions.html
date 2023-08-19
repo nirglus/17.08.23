@@ -266,7 +266,7 @@
                 } 
              }            
          }
-         //Task 36
+        //Task 36
          function fiveMinMax(){
             var arr = [];
             for (var i =0; i < 5; i++){
@@ -278,7 +278,7 @@
                 console.log("Min: " + min +" Max: " + max);
                       
           }
-         //Task 37
+        //Task 37
          function nameStartAt(){
             var name = prompt("What's your name? ");
             while (name.charAt(0) != "A"){
@@ -286,7 +286,7 @@
                 name = prompt("What's your name? ");
             }
          } 
-         //Task 38
+        //Task 38
          function nameStartAtA(){
             var name = prompt("What's your name? ");
             while (name.charAt(0) != "A" && name.charAt(0) != "a"){
@@ -294,7 +294,7 @@
                 name = prompt("What's your name? ");
             }
          }
-         //Task 39
+        //Task 40
         function minAndMax() {
              var max = Number.MIN_SAFE_INTEGER;
              var min = Number.MAX_SAFE_INTEGER;
@@ -309,7 +309,16 @@
                     max = num;
                 }
             }
+          }
+        //Task 41
+        function divideDigs(){
+            var num = +prompt("Enter a number: ");
+            for(var i = 0; i < num.toString().length; i++){
+                console.log(num.toString().charAt(i));
+            }
         }
+
+
 
     </script>
 </body>
