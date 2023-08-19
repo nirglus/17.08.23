@@ -268,19 +268,15 @@
          }
          //Task 36
          function fiveMinMax(){
-            var max = Number.MIN_SAFE_INTEGER;
-            var min = Number.MAX_SAFE_INTEGER;
-            for (var i = 0; i < Number.MAX_SAFE_INTEGER; i++){
-               var num = +prompt("Enter a number: ");
-                if (num <= 0){
-                  console.log("Min: " + min +" Max: " + max);
-                   i = Number.MAX_SAFE_INTEGER;
-                } else if(num < min){
-                  min = num;
-                } else if (num > max){
-                   max = num;
+            var arr = [];
+            for (var i =0; i < 5; i++){
+                var num = +prompt("Enter a number: ");
+                arr.push(num);
                 }
-             }           
+                var max = Math.max(...arr);
+                var min = Math.min(...arr);
+                console.log("Min: " + min +" Max: " + max);
+                      
           }
          //Task 37
          function nameStartAt(){
@@ -299,6 +295,22 @@
             }
          }
          //Task 39
+        function minAndMax() {
+             var max = Number.MIN_SAFE_INTEGER;
+             var min = Number.MAX_SAFE_INTEGER;
+             for (var i = 0; i < Number.MAX_SAFE_INTEGER; i++){
+             var num = +prompt("Enter a number: ");
+             if (num <= 0){
+                console.log("Min: " + min +" Max: " + max);
+                i = Number.MAX_SAFE_INTEGER;
+                } else if(num < min){
+                min = num;
+                } else if (num > max){
+                    max = num;
+                }
+            }
+        }
+
     </script>
 </body>
 </html>
