@@ -324,9 +324,21 @@
                   console.log(i + " * " + j + " = " + (j*i));
                 }
             }
-        }
-
-
+        }    
+        //Task 43
+        function gueesANum() {
+             var randomNum = Math.floor(Math.random()*100);
+             var userNum = +prompt("Guess a number between 0 to 99: ");
+             var i = 0;
+             var startTime = new Date();
+             while (userNum != randomNum){
+                  userNum = +prompt("Wrong! Try again.")
+                  i++;
+                }
+             var endTime = new Date();
+             var total = (endTime - startTime)/1000;
+             alert("Amazing! You got the right number! It took you only "+ i + " guesses, and " + total + " seconds.");
+          }        
 
     </script>
 </body>
